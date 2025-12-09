@@ -1,0 +1,475 @@
+{
+  "$schema": "http://cyclonedx.org/schema/bom-1.5.schema.json",
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "serialNumber": "urn:uuid:5171dca1-69ad-4a33-9fe3-f898dbbe0d69",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2025-12-09T23:49:36Z",
+    "lifecycles": [
+      {
+        "phase": "pre-build"
+      }
+    ],
+    "component": {
+      "type": "library",
+      "bom-ref": "pkg:github/mongodb/libmongocrypt@master",
+      "supplier": {
+        "name": "MongoDB, Inc.",
+        "url": [
+          "https://mongodb.com"
+        ]
+      },
+      "author": "MongoDB, Inc.",
+      "publisher": "MongoDB, Inc.",
+      "group": "mongodb",
+      "name": "libmongocrypt",
+      "description": "C library for Client Side and Queryable Encryption in MongoDB",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "copyright": "2018-present, MongoDB, Inc.",
+      "version": "master",
+      "cpe": "cpe:2.3:a:mongodb:libmongocrypt:*:*:*:*:*:*:*:*",
+      "purl": "pkg:github/mongodb/libmongocrypt@master",
+      "externalReferences": [
+        {
+          "type": "license",
+          "url": "https://raw.githubusercontent.com/mongodb/libmongocrypt/refs/heads/master/LICENSE",
+          "comment": "Apache License 2.0"
+        },
+        {
+          "type": "website",
+          "url": "https://www.mongodb.com/docs/manual/core/csfle/reference/libmongocrypt/",
+          "comment": "Documentation site for installing libmongocrypt for CSFLE."
+        },
+        {
+          "type": "release-notes",
+          "url": "https://github.com/mongodb/libmongocrypt/blob/master/CHANGELOG.md"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/mongodb/libmongocrypt.git"
+        }
+      ]
+    },
+    "supplier": {
+      "name": "MongoDB, Inc.",
+      "url": [
+        "https://mongodb.com"
+      ]
+    },
+    "tools": {
+      "services": [
+        {
+          "name": "Endor Labs Inc",
+          "version": "v1.7.711"
+        }
+      ]
+    }
+  },
+  "components": [
+    {
+      "type": "library",
+      "bom-ref": "pkg:generic/intel/IntelRDFPMathLib@2.0.2",
+      "supplier": {
+        "name": "Intel",
+        "url": [
+          "https://www.intel.com/content/www/us/en/developer/articles/tool/intel-decimal-floating-point-math-library.html"
+        ],
+        "contact": [
+          {
+            "email": "decimalfp@intel.com"
+          }
+        ]
+      },
+      "author": "Marius Cornea",
+      "group": "intel",
+      "name": "Intel\u00ae Decimal Floating-Point Math Library",
+      "version": "2.0.2",
+      "description": "A a software implementation of the IEEE Standard 754-2019 Decimal Floating-Point Arithmetic specification.",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "copyright": "Copyright (c) 2011, Intel Corp.",
+      "purl": "pkg:generic/intel/IntelRDFPMathLib@2.0.2",
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://www.netlib.org/misc/intel/"
+        }
+      ],
+      "scope": "optional"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:github/cyrusimap/cyrus-sasl@unknown",
+      "supplier": {
+        "name": "The Cyrus Project",
+        "url": [
+          "https://www.cyrusimap.org/sasl/",
+          "https://www.cyrusimap.org/overview/who_is_cyrus.html"
+        ]
+      },
+      "author": "The Cyrus Team",
+      "group": "cyrus",
+      "name": "Cyrus SASL",
+      "version": "unknown",
+      "description": "Simple Authentication and Security Layer (SASL) is a specification that describes how authentication mechanisms can be plugged into an application protocol on the wire. Cyrus SASL is an implementation of SASL that makes it easy for application developers to integrate authentication mechanisms into their application in a generic way.",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-Attribution-HPND-disclaimer"
+          }
+        }
+      ],
+      "copyright": "Copyright (c) 1998-2003 Carnegie Mellon University. All rights reserved.",
+      "cpe": "cpe:2.3:a:cyrus:sasl:unknown:*:*:*:*:*:*:*",
+      "purl": "pkg:github/cyrusimap/cyrus-sasl@unknown",
+      "externalReferences": [
+        {
+          "url": "https://github.com/cyrusimap/cyrus-sasl.git",
+          "type": "distribution"
+        }
+      ],
+      "properties": [
+        {
+          "name": "user-specified",
+          "value": "true"
+        }
+      ],
+      "scope": "optional"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:github/facebook/zstd@unknown",
+      "supplier": {
+        "name": "Meta Open Source",
+        "url": [
+          "https://opensource.fb.com/"
+        ]
+      },
+      "author": "Meta Platforms, Inc.",
+      "group": "facebook",
+      "name": "Zstandard (zstd)",
+      "version": "unknown",
+      "description": "Zstandard - Fast real-time compression algorithm",
+      "licenses": [
+        {
+          "expression": "BSD-3-Clause OR GPL-2.0-only"
+        }
+      ],
+      "copyright": "Copyright (c) Meta Platforms, Inc. and affiliates. All rights reserved.",
+      "cpe": "cpe:2.3:a:facebook:zstandard:unknown:*:*:*:*:*:*:*",
+      "purl": "pkg:github/facebook/zstd@unknown",
+      "externalReferences": [
+        {
+          "url": "https://github.com/facebook/zstd.git",
+          "type": "distribution"
+        }
+      ],
+      "properties": [
+        {
+          "name": "user-specified",
+          "value": "true"
+        }
+      ],
+      "scope": "optional"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:github/google/snappy@unknown",
+      "supplier": {
+        "name": "Google LLC",
+        "url": [
+          "https://opensource.google/"
+        ]
+      },
+      "author": "Snappy Project",
+      "group": "google.opensource",
+      "name": "snappy",
+      "version": "unknown",
+      "description": "A fast compressor/decompressor",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "copyright": "Copyright 2011, Google Inc. All rights reserved.",
+      "cpe": "cpe:2.3:a:google:snappy:unknown:*:*:*:*:*:*:*",
+      "purl": "pkg:github/google/snappy@unknown",
+      "externalReferences": [
+        {
+          "url": "https://github.com/google/snappy.git",
+          "type": "distribution"
+        }
+      ],
+      "properties": [
+        {
+          "name": "user-specified",
+          "value": "true"
+        }
+      ],
+      "scope": "optional"
+    },
+    {
+      "bom-ref": "pkg:github/juliastrings/utf8proc@v2.8.0",
+      "type": "library",
+      "author": "Jan Behrens, the Public Software Group, the Julia-language developers",
+      "supplier": {
+        "name": "The Julia Programming Language",
+        "url": [
+          "https://julialang.org/"
+        ]
+      },
+      "group": "JuliaStrings",
+      "name": "utf8proc",
+      "version": "2.8.0",
+      "description": "A clean C library for processing UTF-8 Unicode data",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "copyright": "Copyright \u00a9 2014-2021 by Steven G. Johnson, Jiahao Chen, Tony Kelman, Jonas Fonseca, and other contributors listed in the git history.",
+      "purl": "pkg:github/juliastrings/utf8proc@v2.8.0",
+      "externalReferences": [
+        {
+          "url": "https://github.com/juliastrings/utf8proc.git",
+          "type": "distribution"
+        }
+      ],
+      "properties": [
+        {
+          "name": "bundled",
+          "value": "true"
+        }
+      ],
+      "scope": "required"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:github/madler/zlib@1.3.1",
+      "supplier": {
+        "name": "zlib",
+        "url": [
+          "https://zlib.net/"
+        ]
+      },
+      "author": "Jean-loup Gailly, Mark Adler",
+      "group": "madler",
+      "name": "zlib",
+      "version": "1.3.1",
+      "description": "zlib is a general purpose data compression library.",
+      "licenses": [
+        {
+          "license": {
+            "id": "Zlib"
+          }
+        }
+      ],
+      "copyright": "Copyright \u00a9 1995-2024 Jean-loup Gailly and Mark Adler.",
+      "cpe": "cpe:2.3:a:zlib:zlib:1.3.1:*:*:*:*:*:*:*",
+      "purl": "pkg:github/madler/zlib@1.3.1",
+      "externalReferences": [
+        {
+          "url": "https://zlib.net/fossils/",
+          "type": "distribution"
+        }
+      ],
+      "properties": [
+        {
+          "name": "bundled",
+          "value": "true"
+        }
+      ],
+      "scope": "optional"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:github/mongodb/mongo-c-driver@2.1.0?#src/libbson",
+      "supplier": {
+        "name": "MongoDB, Inc.",
+        "url": [
+          "https://mongodb.com"
+        ]
+      },
+      "author": "MongoDB, Inc.",
+      "group": "mongodb",
+      "name": "MongoDB C Driver",
+      "version": "2.1.0",
+      "description": "The Official MongoDB driver for C language",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "copyright": "2009-present, MongoDB, Inc.",
+      "cpe": "cpe:2.3:a:mongodb:c_driver:2.1.0:*:*:*:*:*:*:*",
+      "purl": "pkg:github/mongodb/mongo-c-driver@2.1.0?#src/libbson",
+      "externalReferences": [
+        {
+          "url": "https://github.com/mongodb/mongo-c-driver/tree/master/src/libbson",
+          "type": "distribution"
+        }
+      ],
+      "scope": "excluded"
+    },
+    {
+      "type": "library",
+      "bom-ref": "pkg:github/openssl/openssl@unknown",
+      "supplier": {
+        "name": "The OpenSSL Project"
+      },
+      "author": "https://raw.githubusercontent.com/openssl/openssl/refs/heads/master/AUTHORS.md",
+      "group": "openssl",
+      "name": "OpenSSL",
+      "version": "unknown",
+      "description": "TLS/SSL and crypto library",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "copyright": "Copyright (c) 1998-2025 The OpenSSL Project Authors",
+      "cpe": "cpe:2.3:a:openssl:openssl:unknown:*:*:*:*:*:*:*",
+      "purl": "pkg:github/openssl/openssl@unknown",
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://www.openssl.org/"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/openssl/openssl"
+        }
+      ],
+      "properties": [
+        {
+          "name": "user-specified",
+          "value": "true"
+        }
+      ],
+      "scope": "optional"
+    },
+    {
+      "bom-ref": "pkg:github/troydhanson/uthash@v2.3.0",
+      "type": "library",
+      "author": "Troy D. Hanson",
+      "group": "troydhanson",
+      "name": "github.com/troydhanson/uthash",
+      "version": "2.3.0",
+      "description": "C macros for hash tables and more",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-1-Clause"
+          }
+        }
+      ],
+      "copyright": "Copyright (c) 2005-2025, Troy D. Hanson",
+      "purl": "pkg:github/troydhanson/uthash@v2.3.0",
+      "externalReferences": [
+        {
+          "url": "https://github.com/troydhanson/uthash.git",
+          "type": "distribution"
+        }
+      ],
+      "scope": "required"
+    },
+    {
+      "bom-ref": "pkg:github/mongodb/libmongocrypt@1.17.0?package-id=7e4a7f1051580a1e",
+      "externalReferences": [
+        {
+          "type": "distribution",
+          "url": "https://github.com/mongodb/libmongocrypt.git"
+        }
+      ],
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "name": "github.com/mongodb/libmongocrypt",
+      "purl": "pkg:github/mongodb/libmongocrypt@1.17.0",
+      "type": "library",
+      "version": "1.17.0",
+      "scope": "excluded"
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "pkg:generic/intel/IntelRDFPMathLib@2.0.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:github/cyrusimap/cyrus-sasl@unknown",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:github/facebook/zstd@unknown",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:github/google/snappy@unknown",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:github/juliastrings/utf8proc@v2.8.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:github/madler/zlib@1.3.1",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:github/mongodb/libmongocrypt@master",
+      "dependsOn": [
+        "pkg:generic/intel/IntelRDFPMathLib@2.0.2",
+        "pkg:github/mongodb/mongo-c-driver@2.1.0?#src/libbson"
+      ]
+    },
+    {
+      "ref": "pkg:github/mongodb/mongo-c-driver@2.1.0?#src/libbson",
+      "dependsOn": [
+        "pkg:github/facebook/zstd@unknown",
+        "pkg:github/google/snappy@unknown",
+        "pkg:github/juliastrings/utf8proc@v2.8.0",
+        "pkg:github/madler/zlib@1.3.1",
+        "pkg:github/mongodb/libmongocrypt@master",
+        "pkg:github/openssl/openssl@unknown",
+        "pkg:github/troydhanson/uthash@v2.3.0"
+      ]
+    },
+    {
+      "ref": "pkg:github/openssl/openssl@unknown",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:github/troydhanson/uthash@v2.3.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:github/mongodb/libmongocrypt@1.17.0?package-id=7e4a7f1051580a1e",
+      "dependsOn": []
+    }
+  ]
+}
