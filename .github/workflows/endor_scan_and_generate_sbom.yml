@@ -47,6 +47,7 @@ jobs:
         uses: actions/checkout@v6
         with:
           fetch-tags: true
+          persist-credentials: false
           submodules: recursive
 
       - name: Configure CMake and fetch dependency sources
