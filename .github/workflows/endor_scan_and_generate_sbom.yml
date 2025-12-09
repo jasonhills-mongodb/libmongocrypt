@@ -50,7 +50,6 @@ jobs:
           submodules: recursive
 
       - name: Configure CMake and fetch dependency sources
-        env:
         run: |
           rm .gitignore # prevent exclusion of ./build from endorctl scan
           mkdir cmake-build
