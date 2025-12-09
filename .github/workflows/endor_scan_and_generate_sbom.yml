@@ -62,7 +62,7 @@ jobs:
         env:
           ENDOR_SCAN_EMBEDDINGS: true
         with:
-          additional_args: '--languages=c --exclude-path="etc/**" --exclude-path="**/.evergreen/**" --exclude-path="build/CMakeFiles/**"'
+          additional_args: '--languages=c --exclude-path="etc/**" --exclude-path="**/.evergreen/**" --exclude-path="cmake-build/CMakeFiles/**"'
           enable_pr_comments: ${{ env.PR_SCAN }}
           github_token: ${{ secrets.GITHUB_TOKEN }} # Required for endorctl to write pr comments
           log_level: info
@@ -140,4 +140,4 @@ jobs:
           commit-message: "chore: Update SBOM after dependency changes"
           delete-branch: true
           labels: sbom
-          title: LIBMONGOCRYPT Update SBOM action [${{ env.BRANCH_NAME }}]
+          title: MONGOCRYPT Update SBOM action [${{ env.BRANCH_NAME }}]
